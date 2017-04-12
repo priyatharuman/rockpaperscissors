@@ -35,38 +35,31 @@
 
 
     <script>
-
+var userChoice = "";
         // User choice
+while (userChoice != 'Q'){
+        userChoice = prompt("Do you choose rock, paper or scissors? Type Q to quit");
 
-        var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 
-
-        if (! userChoice) {
-
-            // User choice was undefined
-
-            document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
-
-        } else {
 
             // Display user choice
 
             document.write("<p>Player 1:" + " " + userChoice + "</p>");
 
-        }
+      
 
 
 
         // Computer choice
 
-        var computerChoice = Math.random();
+        var computerChoice = 100*Math.random();
 
-        if (computerChoice < 0.34) {
+        if (computerChoice < 30 {
 
             computerChoice = "rock";
 
-        } else if(computerChoice <= 0.67) {
+        } else if(computerChoice <= 70) {
 
             computerChoice = "paper";
 
@@ -161,7 +154,7 @@
         // Display results
 
         document.write("<br><hr><br>" + results);
-
+}
     </script>
 
 
